@@ -1,13 +1,7 @@
-package Entidade;
+package Entidades;
 
 public class Pessoa {
-    public String nome;
-    public String conjugue;
-    public String filhos;
-
     public String getNome() {
-
-
         return nome;
     }
 
@@ -15,36 +9,19 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getConjugue() {
-        return conjugue;
-    }
-
-    public void setConjugue(String conjugue) {
-        this.conjugue = conjugue;
-    }
-
-    public String getFilhos() {
-        return filhos;
-    }
-
-    public void setFilhos(String filhos) {
-        this.filhos = filhos;
-    }
+    public String nome;
 
     public Pessoa(String nome) {
-        System.out.println(nome);
-        System.out.println(conjugue);
-        System.out.println(filhos);
+        this.nome = nome;
     }
-    public String addConjugue(String conjugue) {
-        System.out.println(conjugue);
-        return conjugue;
+
+    public int getIdade() {
+        return idade;
     }
-    public String addFilhos(String filhos) {
-        System.out.println(filhos);
-        return filhos;
+
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
-    public void printArvoreFamiliar(int i){
-        System.out.println();
-    }
+
+    public int idade;
 }
