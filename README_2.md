@@ -1,12 +1,12 @@
 Cenário 2:# Cenário 1:
 
-# Programa de Árvore Familiar 
+# Programa da Roda Gigante 
 
 Este programa gera e imprime uma árvore familiar com base nos dados fornecidos.
 
 ## Descrição
 
-O programa cria uma árvore familiar instanciando objetos `Pessoa` e conectando-os como membros da família. Em seguida, imprime a árvore de forma recursiva usando o método `imprimirArvoreFamiliar`.
+O programa cria uma roda gigante instanciando objetos `Entidades(Adulto, Criança)`, e conectando-os como passageiros da roda gigante. Em seguida, imprime a situação das cabines do brinquedo através do método `roda_gigante.status`, junto com o método `.quadro` .
 
 ## Utilização
 
