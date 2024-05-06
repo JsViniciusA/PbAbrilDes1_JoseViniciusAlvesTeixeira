@@ -20,6 +20,18 @@ public class main {
         Pessoa sigrid = new Pessoa("Sigrid", opa);
         // Children and spouse of Reinhold
         reinhold.adicionarConjuge(new Pessoa("Sonia"));
+        lily.addConjugue(new Pessoa("Wilhelm")));
+        // Patriarch and matriarch
+        Pessoa opa = new Pessoa("Opa");
+        Pessoa oma = new Pessoa("Oma");
+        opa.addConjugue(String.valueOf(oma));
+        // Children of Oma and Opa
+        Pessoa reinhold = new Pessoa("Reinhold");
+        Pessoa wilma = new Pessoa("Wilma");
+        Pessoa sigrid = new Pessoa("Sigrid");
+        opa.addFilhos(String.valueOf(reinhold));
+        // Children and spouse of Reinhold
+        reinhold.adicionarConjuge(new Pessoa("Sonia")));
         Pessoa christian = new Pessoa("Christian", reinhold);
         Pessoa gabrielle = new Pessoa("Gabrielle", reinhold);
         Pessoa sabine = new Pessoa("Sabine", reinhold);
@@ -45,10 +57,4 @@ public class main {
 
     }
 }
-
-
-
-
-
-
 
