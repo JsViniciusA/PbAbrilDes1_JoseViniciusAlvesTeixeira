@@ -1,3 +1,4 @@
+
 import Entidade.Pessoa;
 
 import java.util.ArrayList;
@@ -9,10 +10,19 @@ public class main {
 
 
         Pessoa lily = new Pessoa("Lily");
-        lily.addConjugue(String.valueOf(new Pessoa("Wilhelm")));
+        lily.adicionarConjuge(new Pessoa("Wilhelm"));
+        // Patriarch and matriarch
+        Pessoa opa = new Pessoa("Opa", lily);
+        opa.adicionarConjuge (new Pessoa("Oma"));
+        // Children of Oma and Opa
+        Pessoa reinhold = new Pessoa("Reinhold",opa);
+        Pessoa wilma = new Pessoa("Wilma", opa);
+        Pessoa sigrid = new Pessoa("Sigrid", opa);
+        // Children and spouse of Reinhold
+        reinhold.adicionarConjuge(new Pessoa("Sonia"));
+        lily.addConjugue(new Pessoa("Wilhelm")));
         // Patriarch and matriarch
         Pessoa opa = new Pessoa("Opa");
-        lily.addFilhos(String.valueOf(opa));
         Pessoa oma = new Pessoa("Oma");
         opa.addConjugue(String.valueOf(oma));
         // Children of Oma and Opa
@@ -21,36 +31,30 @@ public class main {
         Pessoa sigrid = new Pessoa("Sigrid");
         opa.addFilhos(String.valueOf(reinhold));
         // Children and spouse of Reinhold
-        reinhold.addConjugue(String.valueOf(new Pessoa("Sonia")));
+        reinhold.adicionarConjuge(new Pessoa("Sonia")));
         Pessoa christian = new Pessoa("Christian", reinhold);
         Pessoa gabrielle = new Pessoa("Gabrielle", reinhold);
         Pessoa sabine = new Pessoa("Sabine", reinhold);
         // Children and spouse of Wilma
-        wilma.addConjugue(String.valueOf(new Pessoa("Rodolfo")));
+        wilma.adicionarConjuge(new Pessoa("Rodolfo"));
         Pessoa ricardo = new Pessoa("Ricardo", wilma);
         Pessoa rodrigo = new Pessoa("Rodrigo", wilma);
         // Ricardo and spouse
-        ricardo.addConjugue(String.valueOf(new Pessoa("Debora")));
+        ricardo.adicionarConjuge(new Pessoa("Debora"));
         // Children and spouse of Christian
-        christian.addConjugue(String.valueOf(new Pessoa("Monica")));
+        christian.adicionarConjuge(new Pessoa("Monica"));
         Pessoa oscar = new Pessoa("Oscar", christian);
         Pessoa lorena = new Pessoa("Lorena", christian);
         // Children and spouse of Sigrid
-        sigrid.addConjugue(String.valueOf(new Pessoa("Peter")));
+        sigrid.adicionarConjuge(new Pessoa("Peter"));
         Pessoa martin = new Pessoa("Martin", sigrid);
         Pessoa thomas = new Pessoa("Thomas", sigrid);
         Pessoa claudia = new Pessoa("Claudia", sigrid);
-        martin.addConjugue(String.valueOf(new Pessoa("Carla")));
-        martin.addFilhos((new Pessoa("Nicolas"));
-        lily.printArvoreFamiliar(0);
+        martin.adicionarConjuge(new Pessoa("Carla"));
+        martin.adicionarFilhos(new Pessoa("Nicolas"));
+        lily.imprimirArvoreGenealogica(0);
 
-     {
-            if ( lily.conjugue!= null) {
-                System.out.println("É casado(a) com: " + ((i)));
-            }
-            else {
-                System.out.println("");
-            }
-        }
+
     }
 }
+
