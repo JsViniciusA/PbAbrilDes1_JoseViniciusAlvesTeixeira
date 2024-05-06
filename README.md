@@ -12,8 +12,15 @@ O programa cria uma árvore familiar instanciando objetos `Pessoa` e conectando-
 
 Para utilizar este programa, siga estes passos:
 
-1. Compile o arquivo `Main.java`: `javac Main.java`
-2. Execute o programa compilado: `java Main`
+1. Faça o git clone do repositório da seguinte maneira: https://github.com/JsViniciusA/PbAbrilDes1_JoseViniciusAlvesTeixeira.git
+
+2. Compile o arquivo `Main.java`: `javac Main.java`
+
+3. Compile o arquivo `Entidades`: `Entidades.Pessoa`
+
+4. Execute o programa compilado: `java Main`
+
+5. Execute o programa compilado: `java Pessoa`
 
 ## Requisitos
 
@@ -24,4 +31,5 @@ Para utilizar este programa, siga estes passos:
 
 - IDE intellij community;
 - Linguagem de orientação a objetos em java;
+- GIT;
   
