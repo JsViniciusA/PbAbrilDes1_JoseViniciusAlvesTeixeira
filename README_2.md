@@ -1,12 +1,12 @@
-Cenário 2:# Cenário 1:
+# Cenário 2:
 
-# Programa da Roda Gigante 
+## Programa da Roda Gigante 
 
-Este programa gera e imprime uma árvore familiar com base nos dados fornecidos.
+Este programa gera e imprime roda gigante,a situação das suas cabines e também os passageiros de cada cabine, com base nos dados fornecidos.
 
 ## Descrição
 
-O programa cria uma roda gigante instanciando objetos `Entidades(Adulto, Criança)`, e conectando-os como passageiros da roda gigante. Em seguida, imprime a situação das cabines do brinquedo através do método `roda_gigante.status`, junto com o método `.quadro` .
+O programa cria uma roda gigante instanciando objetos `Entidades(Adulto, Criança)`, e conectando-os como passageiros da roda gigante, que exibe sua situação pela classe `Roda_Gigante`. Em seguida, imprime a situação das cabines do brinquedo através do método `roda_gigante.status`, junto com o método `.quadro` .
 
 ## Utilização
 
@@ -16,11 +16,11 @@ Para utilizar este programa, siga estes passos:
 
 2. Compile o arquivo `Main.java`: `javac Main.java`
 
-3. Compile o arquivo `Entidades`: `Entidades.Adulto`; `Entidades.Crianca`; `Entidades.
+3. Compile o arquivo `Entidades`: `Entidades.Adulto`; `Entidades.Crianca`; `Entidades.Roda_Gigante`
 
 4. Execute o programa compilado: `java Main`
 
-5. Execute o programa compilado: `java Pessoa`
+5. Execute os programas compilados do pacote: `java Entidades `, como `(Criança, Adulto e Roda_Gigante)`
 
 ## Requisitos
 
