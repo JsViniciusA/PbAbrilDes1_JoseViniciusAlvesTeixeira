@@ -2,7 +2,7 @@
 
 ## Programa da Roda Gigante 
 
-Este programa gera e imprime roda gigante,a situação das suas cabines e também os passageiros de cada cabine, com base nos dados fornecidos.
+Este programa gera e imprime uma roda gigante,a situação das suas cabines e também os passageiros de cada cabine, com base nos dados fornecidos.
 
 ## Descrição
 
